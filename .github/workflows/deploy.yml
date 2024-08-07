@@ -1,24 +1,30 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (master)
 
 on:
   push:
-    branches: [main]
+    branches: [ master ]  # Specify the branch to trigger deployment (master in this case)
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Run the workflow on Ubuntu machines
+
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.11.4'
-    - name: Install dependencies
-      run: pip install mkdocs mkdocs-material
-    - name: Build
-      run: mkdocs build
-    - name: Deploy
-      uses: actions/deploy@v1
-      with:
-        provider: pages
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        folder: site
+      - uses: actions/checkout@v3  # Checkout the repository code
+
+      - uses: actions/setup-python@v4  # Set up Python environment
+        with:
+          python-version: '3.x'  # Replace with your specific Python version
+
+      - name: Install dependencies  # Install required dependencies
+        run: pip install mkdocs mkdocs-material
+
+      - name: Build MkDocs site  # Build the MkDocs site
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages  # Deploy the built site
+        uses: actions/deploy@v1  # Use the GitHub Pages deployment action
+        with:
+          provider: pages  # Specify the provider as GitHub Pages
+          github-token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
+          folder: site   # Specify the folder containing the built site (site in this case)
+          message: "Deploy from master branch"  # Optional: Set a commit message for the deployment
