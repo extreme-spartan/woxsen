@@ -1,0 +1,19 @@
+site_name: Human Settlements Course
+nav:
+  - Home: index.md
+  - Introduction to Settlements:
+    - What is a Settlement?: introduction/what-is-settlement.md
+    - Elements of Human Settlements: introduction/elements-of-settlements.md
+  - Evolution of Settlements:
+    - Phases of Settlement Evolution: evolution/phases-of-evolution.md
+    - Historical Timeline: evolution/historical-timeline.md
+  - Classification of Settlements:
+    - Size and Pattern: classification/size-and-pattern.md
+    - Functions of Settlements: classification/functions.md
+  - Settlement Characteristics:
+    - Settlement Hierarchy: characteristics/hierarchy.md
+    - Sphere of Influence: characteristics/sphere-of-influence.md
+  - Land Use and Density:
+    - Types of Land Use: land-use/types.md
+    - Settlement Densities: land-use/densities.md
+theme: material
