@@ -8,5 +8,6 @@ Welcome to the Human Settlements Course. This course will explore the origin, de
 3. Classification of Settlements
 4. Settlement Characteristics
 5. Land Use and Density
+6. Assessment and Test
 
 Let's begin our journey through the fascinating world of human settlements!
