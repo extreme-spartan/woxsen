@@ -1,4 +1,4 @@
-# Human Settlements Course
+# Human Settlements Course - SPN
 
 Welcome to the Human Settlements Course. This course will explore the origin, development, and characteristics of human settlements from primitive times to modern urban environments.
 
